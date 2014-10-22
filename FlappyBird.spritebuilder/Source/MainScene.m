@@ -14,13 +14,8 @@
     CGPoint _ratio;
     CGPoint _offset;
     CCNode *__unsafe_unretained _child; // weak ref
-    
-    CGPoint _cloudParallaxRatio;
-    CGPoint _bushParallaxRatio;
-    
-    CCNode *_parallaxContainer;
-    CCParallaxNode *_parallaxBackground;
-}
+   }
+
 @property (nonatomic,readwrite) CGPoint ratio;
 @property (nonatomic,readwrite) CGPoint offset;
 @property (nonatomic,readwrite,unsafe_unretained) CCNode *child;
@@ -29,6 +24,13 @@
 @end
 
 @implementation MainScene {
+    
+    CGPoint _cloudParallaxRatio;
+    CGPoint _bushParallaxRatio;
+    
+    CCNode *_parallaxContainer;
+    CCParallaxNode *_parallaxBackground;
+
     CCNode *_ground1;
     CCNode *_ground2;
     NSArray *_grounds;
